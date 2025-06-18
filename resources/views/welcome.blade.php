@@ -87,6 +87,7 @@
       background: #ccc;
       border-radius: 50%;
       background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMCbr-5T_JJrYpdHFJwA9LImzmZC5ejEjk0B5ywInSJ8_B0565mBLb4UZzLKPJcQ6_O98&usqp=CAU'); 
+      background-size: cover;
       background-position: center;
     }
 
@@ -101,9 +102,19 @@
         text-align: center;
       }
     }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
+
+
+
   <header>
     <nav class="navbar">
       <ul>
@@ -116,6 +127,7 @@
       </ul>
     </nav>
   </header>
+<div id="test" style="text-align:center; margin-top:20px;">This is test text</div>
 
   <main class="main-section">
     <div class="left">
@@ -128,15 +140,16 @@
         <a href="#"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fab fa-facebook"></i></a>
       </div>
+
+      <h3 class="title">Click here to see dynamic content</h3>
     </div>
+
     <div class="right">
       <div class="profile-pic"></div>
     </div>
   </main>
 
-
-<<script src="{{asset('assets/js/script.js')}}">
-    
-</script>
+  
+  <script src="{{ asset('assets/js/script.js') }}"></script>
 </body>
 </html>
