@@ -26,9 +26,7 @@ return new class extends Migration
             $table->enum('status', ['active', 'inactive', 'in-progress'])->default('active');
             $table->timestamps();
         });
-    }
-
-    /**
+    }    /**
      * Reverse the migrations.
      */
     public function down(): void

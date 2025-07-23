@@ -23,6 +23,7 @@ return new class extends Migration
             $table->enum('category', ['academic', 'professional', 'other']);
             $table->timestamps();
         });
+
     }
 
     /**
